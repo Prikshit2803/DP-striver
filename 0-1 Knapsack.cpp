@@ -6,7 +6,7 @@ class Solution
     
     int dpmemo(int i,int W,int wt[], int val[],vector<vector<int>> &dp){
         
-        // if( W==0)
+        // if( W==0) this also works
         // return 0; not needed as when w=0 no more will be added
         
         if(i==0){
