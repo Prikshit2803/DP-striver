@@ -3,7 +3,7 @@ class Solution
     public:
     int mod=1e9+7;
      //when count all ways we use base case to return 1 and 0 to get count
-    int dpmemo(int i,int j,string S, string T,vector<vector<int>> &dp){
+    int dpmemo(int i,int j,string &S, string &T,vector<vector<int>> &dp){
         
         if(j<0)
         return 1;
@@ -28,7 +28,7 @@ class Solution
         
        // vector<vector<int>> dp(n,vector<int>(m,-1)); //for memo
       
-    // return dpmemo(n-1,m-1,S,T,dp); //gives tle
+    // return dpmemo(n-1,m-1,S,T,dp); //gives tle , strings not passed by reference
      
      //tabulation
      
